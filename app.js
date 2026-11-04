@@ -257,7 +257,13 @@ function initWorkout(){let s=$("daySelect");s.innerHTML=PLAN.map((p,i)=>`<option
  const c=$("cmpDay");if(c){c.innerHTML=PLAN.slice(0,6).map((p,i)=>`<option value="${i}">${DAY_NAMES[i]} · ${p.name}</option>`).join("");c.value=Math.min(dayIndex(),5)}}
 function selectedDay(){return Number($("daySelect").value||0)}
 
+const EX_IMG={"squats":"squats.jpg","leg press":"leg-press.jpg","leg extension":"leg-extension.jpg","leg curl":"leg-curl.jpg","standing calf raises":"standing-calf-raises.jpg","hanging knee raises":"hanging-knee-raises.jpg","plank":"plank.jpg","incline chest press machine":"incline-chest-press-machine.jpg","flat dumbbell press":"flat-dumbbell-press.jpg","cable chest fly":"cable-chest-fly.jpg","romanian deadlift":"romanian-deadlift.jpg","bulgarian split squat":"bulgarian-split-squat.jpg","lying leg curl":"lying-leg-curl.jpg","hip thrust":"hip-thrust.jpg","calf raises":"calf-raises.jpg","cable crunch":"cable-crunch.jpg","reverse crunch":"reverse-crunch.jpg","lat pulldown":"lat-pulldown.jpg","chest supported row":"chest-supported-row.jpg","seated cable row":"seated-cable-row.jpg","incline dumbbell curl":"incline-dumbbell-curl.jpg","cable biceps curl":"cable-biceps-curl.jpg","seated dumbbell shoulder press":"seated-dumbbell-shoulder-press.jpg","dumbbell lateral raises":"dumbbell-lateral-raises.jpg","reverse pec deck":"reverse-pec-deck.jpg","ez bar curl":"ez-bar-curl.jpg","hammer curl":"hammer-curl.jpg","barbell bench press":"barbell-bench-press.jpg","incline dumbbell press":"incline-dumbbell-press.jpg","pec deck fly":"pec-deck-fly.jpg","rope triceps pushdown":"rope-triceps-pushdown.jpg","overhead cable extension":"overhead-cable-extension.jpg"};
 function exerciseArt(name){
+ const f=EX_IMG[name.toLowerCase()];
+ if(!f)return exerciseArtLegacy(name);
+ return `<div class="exercise-photo pro"><img src="assets/exercises/${f}" alt="${esc(name)} demonstration" loading="lazy"><span>PHOTO GUIDE · ${esc(name.toUpperCase())}</span></div>`;
+}
+function exerciseArtLegacy(name){
  const n=name.toLowerCase();
  let file="bench-press.jpg";
  if(n.includes("incline")||n.includes("flat dumbbell")||n.includes("chest press")) file="incline-press.jpg";

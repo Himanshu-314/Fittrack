@@ -8,3 +8,8 @@ fibre and mineral targets. Works offline; data stays on your phone; JSON backup 
 Files: `index.html`, `app.js` (core), `nutrition.js`, `foods.js` (offline food database + parser),
 `sw.js`, `manifest.webmanifest`, `icon.svg`, `icons/`, `assets/` (exercise photos),
 `backend/` (optional AI service; deploy separately — never commit API keys).
+
+
+## Image credits
+
+Some exercise photos come from [free-exercise-db](https://github.com/yuhonas/free-exercise-db) (Unlicense / public domain).
