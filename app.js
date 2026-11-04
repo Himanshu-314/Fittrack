@@ -261,7 +261,7 @@ const EX_IMG={"squats":"squats.jpg","leg press":"leg-press.jpg","leg extension":
 function exerciseArt(name){
  const f=EX_IMG[name.toLowerCase()];
  if(!f)return exerciseArtLegacy(name);
- return `<div class="exercise-photo pro"><img src="assets/exercises/${f}" alt="${esc(name)} demonstration" loading="lazy"><span>PHOTO GUIDE · ${esc(name.toUpperCase())}</span></div>`;
+ return `<div class="exercise-photo pro"><img src="assets/exercise/${f}" alt="${esc(name)} demonstration" data-n="${esc(name)}" onerror="this.onerror=null;this.parentNode.outerHTML=exerciseArtLegacy(this.dataset.n)"><span>PHOTO GUIDE · ${esc(name.toUpperCase())}</span></div>`;
 }
 function exerciseArtLegacy(name){
  const n=name.toLowerCase();
