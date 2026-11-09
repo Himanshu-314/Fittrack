@@ -69,7 +69,10 @@ export default {
       if (!parsed || !Array.isArray(parsed.items)) return json({ error: "unreadable model output" }, 502);
       return json({ items: parsed.items.slice(0, 25) });
     } catch (e) {
-      return json({ error: "upstream error", detail: String(e.message || e).slice(0, 200) }, 502);
+      return json({
+  error: "upstream error",
+  detail: String(e.message || e).slice(0, 900)
+}, 502);
     }
   },
 };
@@ -95,7 +98,10 @@ async function callGemini(env, userText, image, mime) {
       generationConfig: { temperature: 0.2, responseMimeType: "application/json", maxOutputTokens: 2000 },
     }),
   });
-  if (!r.ok) throw new Error("Gemini " + r.status);
+  if (!r.ok) {
+  const detail = await r.text();
+  throw new Error("Gemini " + r.status + ": " + detail.slice(0, 700));
+}
   const j = await r.json();
   return j.candidates?.[0]?.content?.parts?.map(p => p.text || "").join("") || "";
 }
