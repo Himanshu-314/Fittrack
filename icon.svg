@@ -1,1 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="110" fill="#101915"/><path d="M90 210h70v92H90zm262 0h70v92h-70zM160 235h192v42H160zM218 150h76v212h-76z" fill="#a7f36b"/><path d="M256 82l30 54h-60z" fill="#d4ffad"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Fitness app logo — hand-drawn flexed arm</title>
+  <desc>Colorful pencil-sketch style flexed arm with green motion ring and yellow energy accents.</desc>
+  <defs>
+    <pattern id="pencil" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
+      <path d="M0 2 L9 2 M2 7 L7 7" stroke="#fff7e8" stroke-width="1.1" opacity=".55"/>
+    </pattern>
+    <pattern id="muscleShade" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <path d="M0 1 L11 1 M3 6 L10 6" stroke="#d96f32" stroke-width="1.4" opacity=".5"/>
+    </pattern>
+  </defs>
+
+  <!-- Open green motion ring -->
+  <path d="M105 302 C75 220 120 123 219 91 C279 72 348 88 393 130"
+        fill="none" stroke="#159447" stroke-width="17" stroke-linecap="round"/>
+  <path d="M109 306 C81 225 126 130 222 99 C278 81 342 95 384 132"
+        fill="none" stroke="#76d94b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M407 187 C438 257 405 345 337 390 C286 423 209 425 151 394"
+        fill="none" stroke="#159447" stroke-width="17" stroke-linecap="round"/>
+  <path d="M400 194 C428 260 395 338 331 380"
+        fill="none" stroke="#76d94b" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Energy marks -->
+  <path d="M390 65 L405 34 L410 76 Z" fill="#ffbf28" stroke="#24211f" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M431 111 L463 91 L447 133 Z" fill="#ffbf28" stroke="#24211f" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M76 175 L48 160 L83 150 Z" fill="#ffbf28" stroke="#24211f" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- Flexed arm silhouette -->
+  <path d="M145 352
+    C119 338 103 316 108 291
+    C113 268 132 252 151 235
+    L183 206
+    C193 196 201 180 202 163
+    L204 137
+    C206 111 225 92 249 92
+    C270 92 286 107 287 128
+    L287 151
+    C302 137 323 128 344 134
+    C368 141 378 162 370 185
+    C365 200 352 210 337 217
+    C365 228 385 251 390 278
+    C397 314 376 350 342 366
+    C304 385 249 392 201 380
+    C178 374 159 365 145 352 Z"
+    fill="#f4a35d" stroke="#26211f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Forearm / muscle color accents -->
+  <path d="M145 352 C119 338 103 316 108 291 C113 268 132 252 151 235
+           L183 206 C193 196 201 180 202 163 L204 137
+           C206 111 225 92 249 92 C270 92 286 107 287 128
+           L287 151 C272 171 255 187 238 205
+           C219 224 205 249 203 274 C200 305 218 337 247 365
+           C207 377 169 368 145 352 Z"
+        fill="#ffc17a" opacity=".88"/>
+  <path d="M145 352 C119 338 103 316 108 291 C113 268 132 252 151 235
+           L183 206 C193 196 201 180 202 163 L204 137
+           C206 111 225 92 249 92 C270 92 286 107 287 128
+           L287 151 C272 171 255 187 238 205
+           C219 224 205 249 203 274 C200 305 218 337 247 365
+           C207 377 169 368 145 352 Z"
+        fill="url(#pencil)" opacity=".8"/>
+
+  <!-- Bicep -->
+  <path d="M205 276 C220 239 249 218 281 216
+           C311 214 338 232 350 258
+           C362 285 349 318 321 337
+           C295 354 262 356 235 343
+           C212 332 197 306 205 276 Z"
+        fill="#f28a45" stroke="#26211f" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M205 276 C220 239 249 218 281 216
+           C311 214 338 232 350 258
+           C362 285 349 318 321 337
+           C295 354 262 356 235 343
+           C212 332 197 306 205 276 Z"
+        fill="url(#muscleShade)" opacity=".75"/>
+  <path d="M222 283 C244 250 279 241 310 255" fill="none" stroke="#ffe0a5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M232 326 C256 339 291 335 313 316" fill="none" stroke="#d96f32" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Fist and fingers -->
+  <path d="M202 163 C205 146 219 133 237 131
+           C251 129 265 135 273 146
+           C283 140 297 141 306 150
+           C317 146 331 152 335 163
+           C348 165 355 178 349 190
+           C343 204 326 212 310 210
+           L275 204 C251 201 229 192 212 181 Z"
+        fill="#ffc17a" stroke="#26211f" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M219 157 C235 148 252 151 262 162
+           M270 151 C282 145 295 151 299 163
+           M305 161 C317 157 329 165 328 177"
+        fill="none" stroke="#d96f32" stroke-width="6" stroke-linecap="round"/>
+  <path d="M218 177 C237 190 257 195 278 197" fill="none" stroke="#fff0cf" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Hand-drawn contour accents -->
+  <path d="M127 297 C132 275 147 260 165 246" fill="none" stroke="#26211f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M169 355 C183 365 198 370 214 372" fill="none" stroke="#26211f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M354 281 C360 306 349 328 330 342" fill="none" stroke="#26211f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M244 105 L251 116 M262 109 L268 121 M183 222 L194 229"
+        stroke="#26211f" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Small colored pencil flecks -->
+  <path d="M118 319 l-10 7 M132 334 l-9 8 M365 350 l10 6 M383 332 l10 4"
+        stroke="#76d94b" stroke-width="5" stroke-linecap="round"/>
+</svg>
