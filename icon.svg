@@ -1,105 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <title>Fitness app logo — hand-drawn flexed arm</title>
-  <desc>Colorful pencil-sketch style flexed arm with green motion ring and yellow energy accents.</desc>
-  <defs>
-    <pattern id="pencil" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
-      <path d="M0 2 L9 2 M2 7 L7 7" stroke="#fff7e8" stroke-width="1.1" opacity=".55"/>
-    </pattern>
-    <pattern id="muscleShade" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
-      <path d="M0 1 L11 1 M3 6 L10 6" stroke="#d96f32" stroke-width="1.4" opacity=".5"/>
-    </pattern>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<title>Colorful pencil-sketch fitness app icon</title>
+<desc>A blue dumbbell in front of an orange flexed arm, surrounded by energetic orange and yellow pencil strokes.</desc>
+<defs>
+  <pattern id="scribbleBlue" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
+    <path d="M0 2h8M2 6h5" stroke="#a9eaff" stroke-width="1.2" opacity=".65"/>
+  </pattern>
+  <pattern id="scribbleOrange" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
+    <path d="M0 2h8M2 6h5" stroke="#ffe4a1" stroke-width="1.2" opacity=".7"/>
+  </pattern>
+  <pattern id="scribbleGray" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
+    <path d="M0 2h8M2 6h5" stroke="#d7d7d7" stroke-width="1.1" opacity=".7"/>
+  </pattern>
+</defs>
 
-  <!-- Open green motion ring -->
-  <path d="M105 302 C75 220 120 123 219 91 C279 72 348 88 393 130"
-        fill="none" stroke="#159447" stroke-width="17" stroke-linecap="round"/>
-  <path d="M109 306 C81 225 126 130 222 99 C278 81 342 95 384 132"
-        fill="none" stroke="#76d94b" stroke-width="7" stroke-linecap="round"/>
-  <path d="M407 187 C438 257 405 345 337 390 C286 423 209 425 151 394"
-        fill="none" stroke="#159447" stroke-width="17" stroke-linecap="round"/>
-  <path d="M400 194 C428 260 395 338 331 380"
-        fill="none" stroke="#76d94b" stroke-width="7" stroke-linecap="round"/>
+<!-- Energetic orange swooshes -->
+<path d="M43 267 C45 172 124 101 222 72 C160 110 117 165 103 231 C88 260 68 281 43 294Z"
+ fill="#ff9c18" stroke="#f15a24" stroke-width="7" stroke-linejoin="round"/>
+<path d="M43 267 C45 172 124 101 222 72 C160 110 117 165 103 231 C88 260 68 281 43 294Z"
+ fill="url(#scribbleOrange)"/>
+<path d="M136 440 C225 469 347 447 421 376 C389 423 309 478 214 475Z"
+ fill="#ff8a18" stroke="#f15a24" stroke-width="6" stroke-linejoin="round"/>
+<path d="M136 440 C225 469 347 447 421 376 C389 423 309 478 214 475Z" fill="url(#scribbleOrange)"/>
+<path d="M264 477 C354 459 416 415 453 368" fill="none" stroke="#ffc928" stroke-width="7" stroke-linecap="round"/>
 
-  <!-- Energy marks -->
-  <path d="M390 65 L405 34 L410 76 Z" fill="#ffbf28" stroke="#24211f" stroke-width="6" stroke-linejoin="round"/>
-  <path d="M431 111 L463 91 L447 133 Z" fill="#ffbf28" stroke="#24211f" stroke-width="6" stroke-linejoin="round"/>
-  <path d="M76 175 L48 160 L83 150 Z" fill="#ffbf28" stroke="#24211f" stroke-width="5" stroke-linejoin="round"/>
+<!-- Flexed arm behind dumbbell -->
+<path d="M174 224
+ C166 204 175 176 190 151
+ L221 109 C237 88 260 70 282 61
+ C302 52 320 61 331 78
+ L350 108 C360 124 352 143 337 151
+ C324 159 309 155 299 143
+ C307 166 302 190 285 207
+ C309 197 332 193 353 205
+ C376 219 384 244 372 264
+ C357 287 325 294 297 284
+ C266 300 221 287 194 263
+ C178 249 169 238 174 224Z"
+ fill="#f6a24f" stroke="#262323" stroke-width="11" stroke-linejoin="round"/>
+<path d="M174 224 C166 204 175 176 190 151 L221 109 C237 88 260 70 282 61
+ C302 52 320 61 331 78 L350 108 C360 124 352 143 337 151
+ C324 159 309 155 299 143 C307 166 302 190 285 207
+ C309 197 332 193 353 205 C376 219 384 244 372 264
+ C357 287 325 294 297 284 C266 300 221 287 194 263
+ C178 249 169 238 174 224Z" fill="url(#scribbleOrange)"/>
+<!-- Arm contours and fist lines -->
+<path d="M202 218 C225 202 241 171 247 140 M251 228 C274 216 291 194 296 174
+ M298 143 C310 132 326 131 338 141 M317 151 C328 162 343 162 355 153"
+ fill="none" stroke="#262323" stroke-width="7" stroke-linecap="round"/>
+<path d="M220 245 C248 264 281 264 306 249" fill="none" stroke="#d86b2d" stroke-width="7" stroke-linecap="round"/>
 
-  <!-- Flexed arm silhouette -->
-  <path d="M145 352
-    C119 338 103 316 108 291
-    C113 268 132 252 151 235
-    L183 206
-    C193 196 201 180 202 163
-    L204 137
-    C206 111 225 92 249 92
-    C270 92 286 107 287 128
-    L287 151
-    C302 137 323 128 344 134
-    C368 141 378 162 370 185
-    C365 200 352 210 337 217
-    C365 228 385 251 390 278
-    C397 314 376 350 342 366
-    C304 385 249 392 201 380
-    C178 374 159 365 145 352 Z"
-    fill="#f4a35d" stroke="#26211f" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+<!-- Dumbbell bar -->
+<path d="M85 306 L422 221" stroke="#252525" stroke-width="65" stroke-linecap="round"/>
+<path d="M85 306 L422 221" stroke="#bfc3c5" stroke-width="48" stroke-linecap="round"/>
+<path d="M85 306 L422 221" stroke="url(#scribbleGray)" stroke-width="44" stroke-linecap="round"/>
+<path d="M102 289 L408 212" stroke="#f3f3f3" stroke-width="7" stroke-linecap="round" opacity=".8"/>
 
-  <!-- Forearm / muscle color accents -->
-  <path d="M145 352 C119 338 103 316 108 291 C113 268 132 252 151 235
-           L183 206 C193 196 201 180 202 163 L204 137
-           C206 111 225 92 249 92 C270 92 286 107 287 128
-           L287 151 C272 171 255 187 238 205
-           C219 224 205 249 203 274 C200 305 218 337 247 365
-           C207 377 169 368 145 352 Z"
-        fill="#ffc17a" opacity=".88"/>
-  <path d="M145 352 C119 338 103 316 108 291 C113 268 132 252 151 235
-           L183 206 C193 196 201 180 202 163 L204 137
-           C206 111 225 92 249 92 C270 92 286 107 287 128
-           L287 151 C272 171 255 187 238 205
-           C219 224 205 249 203 274 C200 305 218 337 247 365
-           C207 377 169 368 145 352 Z"
-        fill="url(#pencil)" opacity=".8"/>
+<!-- Left weight plates -->
+<g transform="rotate(-15 145 316)">
+  <rect x="67" y="235" width="100" height="168" rx="42" fill="#252525"/>
+  <rect x="76" y="245" width="82" height="148" rx="34" fill="#168fe0" stroke="#252525" stroke-width="8"/>
+  <rect x="76" y="245" width="82" height="148" rx="34" fill="url(#scribbleBlue)"/>
+  <rect x="43" y="269" width="57" height="117" rx="25" fill="#252525"/>
+  <rect x="51" y="277" width="42" height="101" rx="19" fill="#777d82" stroke="#252525" stroke-width="7"/>
+  <rect x="51" y="277" width="42" height="101" rx="19" fill="url(#scribbleGray)"/>
+  <rect x="27" y="298" width="31" height="61" rx="13" fill="#252525"/>
+  <rect x="33" y="304" width="20" height="49" rx="9" fill="#c9cdd0"/>
+</g>
 
-  <!-- Bicep -->
-  <path d="M205 276 C220 239 249 218 281 216
-           C311 214 338 232 350 258
-           C362 285 349 318 321 337
-           C295 354 262 356 235 343
-           C212 332 197 306 205 276 Z"
-        fill="#f28a45" stroke="#26211f" stroke-width="9" stroke-linejoin="round"/>
-  <path d="M205 276 C220 239 249 218 281 216
-           C311 214 338 232 350 258
-           C362 285 349 318 321 337
-           C295 354 262 356 235 343
-           C212 332 197 306 205 276 Z"
-        fill="url(#muscleShade)" opacity=".75"/>
-  <path d="M222 283 C244 250 279 241 310 255" fill="none" stroke="#ffe0a5" stroke-width="8" stroke-linecap="round"/>
-  <path d="M232 326 C256 339 291 335 313 316" fill="none" stroke="#d96f32" stroke-width="7" stroke-linecap="round"/>
+<!-- Right weight plates -->
+<g transform="rotate(-15 410 236)">
+  <rect x="365" y="140" width="104" height="187" rx="43" fill="#252525"/>
+  <rect x="374" y="150" width="86" height="168" rx="35" fill="#168fe0" stroke="#252525" stroke-width="8"/>
+  <rect x="374" y="150" width="86" height="168" rx="35" fill="url(#scribbleBlue)"/>
+  <rect x="449" y="175" width="43" height="135" rx="20" fill="#252525"/>
+  <rect x="456" y="183" width="30" height="119" rx="14" fill="#168fe0" stroke="#252525" stroke-width="7"/>
+  <rect x="456" y="183" width="30" height="119" rx="14" fill="url(#scribbleBlue)"/>
+</g>
 
-  <!-- Fist and fingers -->
-  <path d="M202 163 C205 146 219 133 237 131
-           C251 129 265 135 273 146
-           C283 140 297 141 306 150
-           C317 146 331 152 335 163
-           C348 165 355 178 349 190
-           C343 204 326 212 310 210
-           L275 204 C251 201 229 192 212 181 Z"
-        fill="#ffc17a" stroke="#26211f" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M219 157 C235 148 252 151 262 162
-           M270 151 C282 145 295 151 299 163
-           M305 161 C317 157 329 165 328 177"
-        fill="none" stroke="#d96f32" stroke-width="6" stroke-linecap="round"/>
-  <path d="M218 177 C237 190 257 195 278 197" fill="none" stroke="#fff0cf" stroke-width="6" stroke-linecap="round"/>
-
-  <!-- Hand-drawn contour accents -->
-  <path d="M127 297 C132 275 147 260 165 246" fill="none" stroke="#26211f" stroke-width="5" stroke-linecap="round"/>
-  <path d="M169 355 C183 365 198 370 214 372" fill="none" stroke="#26211f" stroke-width="5" stroke-linecap="round"/>
-  <path d="M354 281 C360 306 349 328 330 342" fill="none" stroke="#26211f" stroke-width="5" stroke-linecap="round"/>
-  <path d="M244 105 L251 116 M262 109 L268 121 M183 222 L194 229"
-        stroke="#26211f" stroke-width="4" stroke-linecap="round" fill="none"/>
-
-  <!-- Small colored pencil flecks -->
-  <path d="M118 319 l-10 7 M132 334 l-9 8 M365 350 l10 6 M383 332 l10 4"
-        stroke="#76d94b" stroke-width="5" stroke-linecap="round"/>
+<!-- Energy sparks -->
+<path d="M414 54 L430 17 L432 78Z" fill="#ffbd22" stroke="#f28a00" stroke-width="5" stroke-linejoin="round"/>
+<path d="M448 119 L485 91 L464 145Z" fill="#ffbd22" stroke="#f28a00" stroke-width="5" stroke-linejoin="round"/>
+<path d="M432 55 L426 73 M467 113 L455 126" stroke="#fff0a8" stroke-width="4" stroke-linecap="round"/>
 </svg>
